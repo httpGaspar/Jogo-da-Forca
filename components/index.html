@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo Da Forca</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <img class="imgLogo" src="../assets/explosionLogo.png" alt="explosionLogo">
+    </header>
+
+    <div class="container">
+        <section class="Temas">
+            <h1>Escolha o tema que deseja Jogar:</h1>
+            <button onclick="selecionarTema('Casa')"><strong>Casa</strong></button>
+            <button onclick="selecionarTema('Frutas')"><strong>Frutas</strong></button>
+            <button onclick="selecionarTema('Animais')"><strong>Animais</strong></button>
+        </section>
+    </div>
+
+    <script>
+        function selecionarTema(tema) {
+            window.location.href = `Jogo.html?tema=${tema}`; //indo para a tela do jogo e passando o tema selecionado 
+        }
+    </script>
+
+    <script src="indes.js"></script>
+</body>
+</html>
