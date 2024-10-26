@@ -39,6 +39,25 @@
         </div>
     </div>
 
+        <!-- Modal de Vitória -->
+    <div id="modalVitoria" class="modal">
+        <div class="modal-conteudo">
+            <span class="fechar" onclick="fecharModal('modalVitoria')">&times;</span>
+            <h2>Parabéns! Você venceu!</h2>
+            <button class="botaoModal" onclick="reiniciarJogo()">Jogar Novamente</button>
+        </div>
+    </div>
+
+    <!-- Modal de Derrota -->
+    <div id="modalDerrota" class="modal">
+        <div class="modal-conteudo">
+            <span class="fechar" onclick="fecharModal('modalDerrota')">&times;</span>
+            <h2>Você perdeu! A palavra era: <span id="palavraPerdida"></span></h2>
+            <button class="botaoModal" onclick="reiniciarJogo()">Jogar Novamente</button>
+        </div>
+    </div>
+
+
     <script src="indes.js"></script>
 </body>
 </html>

@@ -155,3 +155,57 @@ button:active {
     transform: scale(0.95);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
+
+.modal {
+    display: none; /* Escondido por padrão */
+    position: fixed; /* Fica fixo na tela */
+    z-index: 1; /* Fica acima de outros elementos */
+    left: 0;
+    top: 0;
+    width: 100%; /* Largura total */
+    height: 100%; /* Altura total */
+    overflow: auto; /* Habilita scroll se necessário */
+    background-color: rgb(0,0,0); /* Cor de fundo */
+    background-color: rgba(0,0,0,0.4); /* Fundo preto com transparência */
+}
+
+.modal-conteudo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--cor-fundo);
+    margin: 15% auto; /* Centraliza o modal */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Largura do modal */
+    text-align: center;
+}
+
+.fechar {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.fechar:hover,
+.fechar:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.botaoModal {
+        display: flex; 
+        justify-content: center;
+        align-items: center; 
+        padding: 10px 30px 10px; 
+        background-color: var(--cor-principal);
+        border: none;
+        width: 130px;
+        height: 80px;
+        border-radius: 18px;
+        font-size: 16px;
+        color: #EEEEEE;
+        cursor: pointer;
+    }
